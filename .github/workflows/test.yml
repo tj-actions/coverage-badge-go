@@ -19,7 +19,7 @@ jobs:
       - name: golangci-lint
         uses: reviewdog/action-golangci-lint@v2
         with:
-          workdir: management
+          workdir: test
           go_version: "1.14.4"
 
       - name: Setup go
