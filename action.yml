@@ -1,0 +1,120 @@
+name: Go Coverage Badge
+description: Generate coverage badge for go projects
+author: tj-actions
+inputs:
+  token:
+    description: 'GITHUB_TOKEN or a Repo scoped PAT'
+    required: true
+    default: ${{ github.token }}
+  filename:
+    description: 'File containing the tests output (default: "coverage.out")'
+    required: true
+    default: coverage.out
+  color:
+    description: 'Color of the badge - green/yellow/red'
+    required: false
+  green:
+    description: 'At what percentage does the badge becomes green instead of yellow (default: 70)'
+    required: false
+  target:
+    description: 'Target file (default "README.md")'
+    required: false
+  text:
+    description: 'Text on the left side of the badge (default: "Coverage")'
+    required: false
+  value:
+    description: 'Text on the right side of the badge'
+    required: false
+  yellow:
+    description: 'At what percentage does the badge becomes yellow instead of red (default 30)'
+    required: false
+  output:
+    description: 'Output markdown file to update (default: "README.md")'
+    required: false
+    default: 'README.md'
+  username:
+    description: 'Username of the github user (default: github.actor)'
+    required: false
+    default: 'github-actions[bot]'
+  email:
+    description: 'Username of the github user (default: github.actor)'
+    required: false
+    default: 'github-actions[bot]@users.noreply.github.com'
+
+runs:
+  using: 'composite'
+  steps:
+    - name: Setup go
+      uses: actions/setup-go@v2
+      with:
+        go-version: '1.14.4'
+
+    - uses: actions/cache@v2
+      with:
+        path: ~/go/pkg/mod
+        key: ${{ runner.os }}-go-${{ hashFiles('**/go.sum') }}
+        restore-keys: |
+          ${{ runner.os }}-go-
+    - run: |
+        EXTRA_ARGS=""
+
+        if [[ -n '${{ inputs.color }}'  ]]; then
+          EXTRA_ARGS+="-color=${{ inputs.color }}"
+        fi
+
+        if [[ -n '${{ inputs.green }}'  ]]; then
+          EXTRA_ARGS+="-green=${{ inputs.green }}"
+        fi
+
+        if [[ -n '${{ inputs.target }}'  ]]; then
+          EXTRA_ARGS+="-target=${{ inputs.target }}"
+        fi
+
+        if [[ -n '${{ inputs.text }}'  ]]; then
+          EXTRA_ARGS+="-text=${{ inputs.text }}"
+        fi
+
+        if [[ -n '${{ inputs.value }}'  ]]; then
+          EXTRA_ARGS+="-value=${{ inputs.value }}"
+        fi
+
+        if [[ -n '${{ inputs.yellow }}'  ]]; then
+          EXTRA_ARGS+="-yellow=${{ inputs.yellow }}"
+        fi
+
+        go get github.com/AlexBeauchemin/gobadge
+        gobadge -filename=${{ inputs.filename }} $EXTRA_ARGS
+        go clean -i github.com/AlexBeauchemin/gobadge
+      id: coverage-badge-go
+      shell: bash
+
+    - name: Verify Changed files
+      uses: tj-actions/verify-changed-files@v8.1
+      id: verify-changed-files
+      with:
+        files: ${{ inputs.output }}
+
+    - name: Commit changes to README
+      id: commit-changes-to-readme
+      run: |
+        if [[ '${{ steps.verify-changed-files.outputs.files_changed }}' == 'true' ]]; then
+          git config --local user.email "${{ inputs.email }}"
+          git config --local user.name "${{ inputs.username }}"
+          git add ${{ inputs.output }}
+          git commit -m "Updated ${{ inputs.output }}"
+        fi
+      shell: bash
+
+    - name: Get branch name
+      id: branch-name
+      uses: tj-actions/branch-names@v5
+
+    - name: Push migration changes
+      uses: ad-m/github-push-action@master
+      with:
+        github_token: ${{ inputs.token }}
+        branch: ${{ steps.branch-name.outputs.current_branch }}
+
+branding:
+  icon: check-circle
+  color: white
