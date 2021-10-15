@@ -101,6 +101,7 @@ runs:
         if [[ '${{ steps.verify-changed-files.outputs.files_changed }}' == 'true' ]]; then
           git config --local user.email "${{ inputs.email }}"
           git config --local user.name "${{ inputs.username }}"
+          git pull
           git add ${{ inputs.output }}
           git commit -m "Updated ${{ inputs.output }}"
         fi
