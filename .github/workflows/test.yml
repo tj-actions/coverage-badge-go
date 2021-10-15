@@ -43,3 +43,4 @@ jobs:
         uses: ./
         with:
           filename: test/coverage.out
+          token: ${{ secrets.PAT_TOKEN }}
