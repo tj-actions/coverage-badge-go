@@ -107,11 +107,15 @@ runs:
         fi
       shell: bash
 
+    - name: Get branch name
+      id: branch-name
+      uses: tj-actions/branch-names@v5
+
     - name: Push migration changes
       uses: ad-m/github-push-action@master
       with:
         github_token: ${{ inputs.token }}
-        branch: ${{ github.ref }}
+        branch: ${{ steps.branch-name.outputs.current_branch }}
 
 branding:
   icon: check-circle
