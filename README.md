@@ -5,7 +5,7 @@
 
                   👆
 
-Generate a coverage badge like the one above for go projects
+Generate a test coverage badge like this one for your go projects.
 
 ## coverage-badge-go
 
