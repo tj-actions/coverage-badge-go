@@ -11,13 +11,6 @@ Github action to generate coverage badge for go projects
 
 ## Usage
 
-Run
-
-    go test -v ./... -covermode=count -coverprofile=coverage.out
-    go tool cover -func=coverage.out -o=coverage.out
-
-Pass the `coverage.out` output to this action
-
 ```yaml
 ...
     steps:
@@ -38,7 +31,7 @@ Pass the `coverage.out` output to this action
           restore-keys: |
             ${{ runner.os }}-go-
 
-      - name: Run Test
+      - name: Run Test  ## Pass the `coverage.out` output to this action
         run:
           go test -v ./... -covermode=count -coverprofile=coverage.out
           go tool cover -func=coverage.out -o=coverage.out
