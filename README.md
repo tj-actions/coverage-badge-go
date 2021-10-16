@@ -57,7 +57,7 @@ jobs:
           files: README.md
 
       - name: Push changes
-        if: github.event == 'pull_request' && steps.changed_files.outputs.files_changed == 'true'
+        if: steps.changed_files.outputs.files_changed == 'true'
         uses: ad-m/github-push-action@master
         with:
           github_token: ${{ github.token }}
