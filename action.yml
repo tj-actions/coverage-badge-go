@@ -67,7 +67,7 @@ runs:
           EXTRA_ARGS+="-yellow=${{ inputs.yellow }}"
         fi
 
-        curl -sf https://gobinaries.com/AlexBeauchemin/gobadge | sh
+        curl -sf https://gobinaries.com/github.com/AlexBeauchemin/gobadge@v0.2.0 | PREFIX=. sh
 
         gobadge -filename=${{ inputs.filename }} $EXTRA_ARGS
       id: coverage-badge-go
