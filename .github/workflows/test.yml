@@ -10,7 +10,12 @@ on:
 
 jobs:
   test:
-    runs-on: ubuntu-latest
+    runs-on: ${{ matrix.platform }}
+    strategy:
+      fail-fast: false
+      matrix:
+        platform: [ubuntu-latest, windows-latest, macos-latest, macos-11, ubuntu-18.04, windows-2022, windows-2016]
+
     name: Test coverage-badge-go
     steps:
       - name: Checkout
@@ -54,13 +59,13 @@ jobs:
           files: README.md
 
       - name: README.md changed
-        if: steps.verify-changed-files.outputs.files_changed == 'true'
+        if: steps.verify-changed-files.outputs.files_changed == 'true' && github.event_name != 'pull_request'
         run: |
           echo "README.md has uncommited changes"
           exit 1
 
       - name: Create Pull Request
-        if: failure()
+        if: failure() && github.event_name != 'pull_request'
         uses: peter-evans/create-pull-request@v3
         with:
           base: "main"
