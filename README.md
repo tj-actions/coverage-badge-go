@@ -66,7 +66,7 @@ If you feel generous and want to show some extra appreciation:
 
 This package was created with [Cookiecutter](https://github.com/cookiecutter/cookiecutter) using [cookiecutter-action](https://github.com/tj-actions/cookiecutter-action)
 
-- https://github.com/AlexBeauchemin/gobadge
+*   https://github.com/AlexBeauchemin/gobadge
 
 ## Report Bugs
 
