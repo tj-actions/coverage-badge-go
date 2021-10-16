@@ -52,7 +52,7 @@ Generate a test coverage badge like this one for your go projects.
         if: github.event == 'pull_request' && steps.changed_files.outputs.files_changed == 'true'
         uses: ad-m/github-push-action@master
         with:
-          github_token: ${{ secrets.ACCESS_TOKEN }}
+          github_token: ${{ github.token }}
           branch: ${{ github.head_ref }}
 ```
 
