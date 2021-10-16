@@ -53,7 +53,7 @@ jobs:
           files: README.md
 
       - name: README.md changed
-        if: steps.verify_changed_files.outputs.files_changed == 'true'
+        if: verify-changed-files.outputs.files_changed == 'true'
         run: |
           echo "README.md has uncommited changes"
           exit 1
