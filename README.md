@@ -48,7 +48,7 @@ Github action to generate coverage badge for go projects
           files: README.md
 
       - name: Create Pull Request
-        if: steps.verify_changed_files.outputs.files_changed == 'true'
+        if: steps.verify-changed-files.outputs.files_changed == 'true'
         uses: peter-evans/create-pull-request@v3
         with:
           base: "main"
