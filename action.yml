@@ -113,12 +113,12 @@ runs:
     - name: Create Pull Request
       uses: peter-evans/create-pull-request@v3
       with:
-        base: "${{ steps.branch-name.outputs.current_branch }}"
+        base: ${{ steps.branch-name.outputs.current_branch }}
         title: "chore: updated coverage Badge"
         branch: "chore/update-coverage"
         commit-message: "Updated README.md"
         body: "Updated README.md"
-        token: "${{ input.token }}"
+        token: ${{ inputs.token }}
 
 branding:
   icon: check-circle
