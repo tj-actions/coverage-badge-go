@@ -13,11 +13,12 @@ Generate a test coverage badge like this one for your go projects.
 
 ```yaml
 ...
-    steps:
+   steps:
       - name: Checkout
         uses: actions/checkout@v2
         with:
           persist-credentials: false # otherwise, the token used is the GITHUB_TOKEN, instead of your personal access token.
+          fetch-depth: 0 # otherwise, there would be errors pushing refs to the destination repository.
       
       - name: Setup go
         uses: actions/setup-go@v2
@@ -47,16 +48,12 @@ Generate a test coverage badge like this one for your go projects.
         with:
           files: README.md
 
-      - name: Create Pull Request
-        if: steps.verify-changed-files.outputs.files_changed == 'true'
-        uses: peter-evans/create-pull-request@v3
+      - name: Push changes
+        if: github.event == 'pull_request' && steps.changed_files.outputs.files_changed == 'true'
+        uses: ad-m/github-push-action@master
         with:
-          base: "main"
-          title: "chore: updated coverage Badge"
-          branch: "chore/update-coverage"
-          commit-message: "chore: updated coverage Badge"
-          body: "updated coverage Badge"
-          token: ${{ github.token }}
+          github_token: ${{ secrets.ACCESS_TOKEN }}
+          branch: ${{ github.head_ref }}
 ```
 
 ## Features
