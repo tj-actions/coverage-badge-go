@@ -110,11 +110,15 @@ runs:
       id: branch-name
       uses: tj-actions/branch-names@v5
 
-    - name: Push migration changes
-      uses: ad-m/github-push-action@master
+    - name: Create Pull Request
+      uses: peter-evans/create-pull-request@v3
       with:
-        github_token: ${{ inputs.token }}
-        branch: ${{ steps.branch-name.outputs.current_branch }}
+        base: ${{ steps.branch-name.outputs.current_branch }}
+        title: "chore: updated coverage Badge"
+        branch: "chore/update-coverage"
+        commit-message: "Updated README.md"
+        body: "Updated README.md"
+        token: ${{ input.token }}
 
 branding:
   icon: check-circle
