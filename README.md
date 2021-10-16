@@ -31,7 +31,7 @@ Github action to generate coverage badge for go projects
           restore-keys: |
             ${{ runner.os }}-go-
 
-      - name: Run Test  ## Pass the `coverage.out` output to this action
+      - name: Run Test  # Pass the `coverage.out` output to this action
         run:
           go test -v ./... -covermode=count -coverprofile=coverage.out
           go tool cover -func=coverage.out -o=coverage.out
