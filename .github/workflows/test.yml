@@ -59,13 +59,13 @@ jobs:
           files: README.md
 
       - name: README.md changed
-        if: steps.verify-changed-files.outputs.files_changed == 'true' && github.event_name != 'pull_request'
+        if: steps.verify-changed-files.outputs.files_changed == 'true' && github.event_name != 'pull_request' && runner.os == 'Linux'
         run: |
           echo "README.md has uncommited changes"
           exit 1
 
       - name: Create Pull Request
-        if: failure() && github.event_name != 'pull_request'
+        if: failure() && github.event_name != 'pull_request' && runner.os == 'Linux'
         uses: peter-evans/create-pull-request@v3
         with:
           base: "main"
