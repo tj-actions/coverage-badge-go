@@ -64,7 +64,7 @@ Generate a test coverage badge like this one for your go projects.
 
 |   Input       |    type    |  required     |  default                      |  description  |
 |:-------------:|:-----------:|:-------------:|:----------------------------:|:-------------:|
-| filename      |  `string`   |     `true`   | `coverage.out`               |  File containing <br /> the tests output <br />(default: "coverage.out") |
+| filename      |  `string`   |     `true`   | `coverage.out`               |  File containing the <br /> tests output <br />(default: "coverage.out") |
 
 *   Free software: [MIT license](LICENSE)
 
