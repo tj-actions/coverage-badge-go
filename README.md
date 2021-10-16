@@ -16,8 +16,16 @@ Generate a test coverage badge like this one for your go projects.
 ## Usage
 
 ```yaml
-...
-   steps:
+on:
+  pull_request:
+    branches:
+      - main
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    name: Update coverage badge
+    steps:
       - name: Checkout
         uses: actions/checkout@v2
         with:
@@ -53,7 +61,7 @@ Generate a test coverage badge like this one for your go projects.
           files: README.md
 
       - name: Push changes
-        if: github.event == 'pull_request' && steps.changed_files.outputs.files_changed == 'true'
+        if: steps.changed_files.outputs.files_changed == 'true'
         uses: ad-m/github-push-action@master
         with:
           github_token: ${{ github.token }}
