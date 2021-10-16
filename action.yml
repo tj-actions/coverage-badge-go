@@ -109,11 +109,21 @@ runs:
     - name: Get branch name
       id: branch-name
       uses: tj-actions/branch-names@v5
+     
+    - name: Branch
+      id: branch
+      run: |
+        BRANCH="${{ steps.branch-name.outputs.current_branch }}"
+        if [[ "${{ github.event }}" == "pull_request" ]]; then
+          BRANCH="${{ steps.branch-name.outputs.base_ref_branch }}"
+        fi
+        echo "::set-output name=current_branch::$(eval printf "%s" "$REF_BRANCH")"
+      shell: bash
 
     - name: Create Pull Request
       uses: peter-evans/create-pull-request@v3
       with:
-        base: ${{ steps.branch-name.outputs.current_branch }}
+        base: ${{ steps.branch.outputs.branch }}
         title: "chore: updated coverage Badge"
         branch: "chore/update-coverage"
         commit-message: "Updated README.md"
