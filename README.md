@@ -61,7 +61,7 @@ Github action to generate coverage badge for go projects
 
 ## Features
 
-*   Generate coverage badge from coverage report.
+*   Generate coverage badge from a coverage report.
 
 ## Inputs
 
