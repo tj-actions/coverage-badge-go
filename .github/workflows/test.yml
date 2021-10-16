@@ -66,5 +66,5 @@ jobs:
           title: "chore: updated coverage badge"
           branch: "chore/update-coverage"
           commit-message: "chore: updated coverage badge"
-          body: "updated coverage Badge"
+          body: "updated coverage badge"
           token: ${{ secrets.PAT_TOKEN }}
