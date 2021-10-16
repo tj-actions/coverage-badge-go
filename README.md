@@ -42,7 +42,7 @@ Pass the `coverage.out` output to this action
 |   Input       |    type    |  required     |  default                      |  description  |
 |:-------------:|:-----------:|:-------------:|:----------------------------:|:-------------:|
 | token         |  `string`   |    `true`    | `${{ github.token }}` | [GITHUB\_TOKEN](https://docs.github.com/en/free-pro-team@latest/actions/reference/authentication-in-a-workflow#using-the-github\_token-in-a-workflow) <br /> or a repo scoped <br /> [Personal Access Token](https://docs.github.com/en/free-pro-team@latest/github/authenticating-to-github/creating-a-personal-access-token)              |
-| filename      |  `string`   |     `true`   | `coverage.out`               |  File containing the tests output (default: "coverage.out") |
+| filename      |  `string`   |     `true`   | `coverage.out`               |  File containing <br /> the tests output <br />(default: "coverage.out") |
 
 *   Free software: [MIT license](LICENSE)
 
