@@ -63,8 +63,8 @@ jobs:
         uses: peter-evans/create-pull-request@v3
         with:
           base: "main"
-          title: "chore: updated coverage Badge"
+          title: "chore: updated coverage badge"
           branch: "chore/update-coverage"
-          commit-message: "chore: updated coverage Badge"
+          commit-message: "chore: updated coverage badge"
           body: "updated coverage Badge"
           token: ${{ secrets.PAT_TOKEN }}
