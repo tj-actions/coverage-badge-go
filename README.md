@@ -12,8 +12,16 @@ Generate a test coverage badge like this one for your go projects.
 ## Usage
 
 ```yaml
-...
-   steps:
+on:
+  pull_request:
+    branches:
+      - main
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    name: Update coverage badge
+    steps:
       - name: Checkout
         uses: actions/checkout@v2
         with:
