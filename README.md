@@ -5,7 +5,7 @@
 
                   👆
 
-Github action to generate coverage badge for go projects
+Generate a coverage badge like the one above for go projects
 
 ## coverage-badge-go
 
