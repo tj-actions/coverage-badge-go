@@ -10,6 +10,11 @@
 
 **Merged pull requests:**
 
+- chore: updated coverage badge [\#14](https://github.com/tj-actions/coverage-badge-go/pull/14) ([jackton1](https://github.com/jackton1))
+- Updated README.md [\#12](https://github.com/tj-actions/coverage-badge-go/pull/12) ([jackton1](https://github.com/jackton1))
+- Updated README.md [\#11](https://github.com/tj-actions/coverage-badge-go/pull/11) ([jackton1](https://github.com/jackton1))
+- chore: updated coverage Badge [\#10](https://github.com/tj-actions/coverage-badge-go/pull/10) ([jackton1](https://github.com/jackton1))
+- Upgraded to v1 [\#9](https://github.com/tj-actions/coverage-badge-go/pull/9) ([jackton1](https://github.com/jackton1))
 - Updated README.md [\#7](https://github.com/tj-actions/coverage-badge-go/pull/7) ([jackton1](https://github.com/jackton1))
 - Update tj-actions/verify-changed-files action to v8 [\#5](https://github.com/tj-actions/coverage-badge-go/pull/5) ([renovate[bot]](https://github.com/apps/renovate))
 - Update tj-actions/remark action to v1.7 [\#4](https://github.com/tj-actions/coverage-badge-go/pull/4) ([renovate[bot]](https://github.com/apps/renovate))
