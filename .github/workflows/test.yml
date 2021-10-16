@@ -65,6 +65,6 @@ jobs:
           base: "main"
           title: "chore: updated coverage Badge"
           branch: "chore/update-coverage"
-          commit-message: "Updated README.md"
-          body: "Updated README.md"
+          commit-message: "chore: updated coverage Badge"
+          body: "updated coverage Badge"
           token: ${{ secrets.PAT_TOKEN }}

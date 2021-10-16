@@ -39,6 +39,23 @@ Github action to generate coverage badge for go projects
         uses: tj-actions/coverage-badge-go@v1
         with:
           filename: coverage.out
+
+      - name: Verify Changed files
+        uses: tj-actions/verify-changed-files@v8.1
+        id: verify-changed-files
+        with:
+          files: README.md
+
+      - name: Create Pull Request
+        if: steps.verify_changed_files.outputs.files_changed == 'true'
+        uses: peter-evans/create-pull-request@v3
+        with:
+          base: "main"
+          title: "chore: updated coverage Badge"
+          branch: "chore/update-coverage"
+          commit-message: "chore: updated coverage Badge"
+          body: "updated coverage Badge"
+          token: ${{ github.token }}
 ```
 
 ## Features
