@@ -25,7 +25,23 @@ Pass the `coverage.out` output to this action
         uses: actions/checkout@v2
         with:
           persist-credentials: false # otherwise, the token used is the GITHUB_TOKEN, instead of your personal access token.
-          fetch-depth: 0 # otherwise, there would be errors pushing refs to the destination repository.
+      
+      - name: Setup go
+        uses: actions/setup-go@v2
+        with:
+          go-version: '1.14.4'
+
+      - uses: actions/cache@v2
+        with:
+          path: ~/go/pkg/mod
+          key: ${{ runner.os }}-go-${{ hashFiles('**/go.sum') }}
+          restore-keys: |
+            ${{ runner.os }}-go-
+
+      - name: Run Test
+        run:
+          go test -v ./... -covermode=count -coverprofile=coverage.out
+          go tool cover -func=coverage.out -o=coverage.out
 
       - name: Go Coverage Badge
         uses: tj-actions/coverage-badge-go@v1
