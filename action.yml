@@ -95,10 +95,14 @@ runs:
       with:
         files: ${{ inputs.output }}
 
+    - name: Get branch name
+      id: branch-name
+      uses: tj-actions/branch-names@v5
+
     - name: Commit changes to README
       id: commit-changes-to-readme
       run: |
-        if [[ '${{ steps.verify-changed-files.outputs.files_changed }}' == 'true' ]]; then
+        if [[ '${{ steps.verify-changed-files.outputs.files_changed }}' == 'true' && "${{ steps.branch-name.outputs.current_branch }}" == "${{ steps.branch-name.outputs.base_ref_branch }}" ]]; then
           git config --local user.email "${{ inputs.email }}"
           git config --local user.name "${{ inputs.username }}"
           git add ${{ inputs.output }}
@@ -106,10 +110,6 @@ runs:
         fi
       shell: bash
 
-    - name: Get branch name
-      id: branch-name
-      uses: tj-actions/branch-names@v5
-     
     - name: Branch
       id: branch
       run: |
