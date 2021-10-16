@@ -2,10 +2,6 @@ name: Go Coverage Badge
 description: Generate coverage badge for go projects
 author: tj-actions
 inputs:
-  token:
-    description: 'GITHUB_TOKEN or a Repo scoped PAT'
-    required: true
-    default: ${{ github.token }}
   filename:
     description: 'File containing the tests output (default: "coverage.out")'
     required: true
@@ -88,47 +84,6 @@ runs:
         go clean -i github.com/AlexBeauchemin/gobadge
       id: coverage-badge-go
       shell: bash
-
-    - name: Verify Changed files
-      uses: tj-actions/verify-changed-files@v8.1
-      id: verify-changed-files
-      with:
-        files: ${{ inputs.output }}
-
-    - name: Get branch name
-      id: branch-name
-      uses: tj-actions/branch-names@v5
-
-    - name: Branch
-      id: branch
-      run: |
-        BRANCH="${{ steps.branch-name.outputs.current_branch }}"
-        if [[ "${{ github.event }}" == "pull_request" ]]; then
-          BRANCH="${{ steps.branch-name.outputs.base_ref_branch }}"
-        fi
-        echo "::set-output name=branch::$(eval printf "%s" "$BRANCH")"
-      shell: bash
-
-    - name: Commit changes to README
-      id: commit-changes-to-readme
-      run: |
-        if [[ '${{ steps.verify-changed-files.outputs.files_changed }}' == 'true' && "${{ steps.branch-name.outputs.current_branch }}" == "${{ steps.branch.outputs.branch }}" ]]; then
-          git config --local user.email "${{ inputs.email }}"
-          git config --local user.name "${{ inputs.username }}"
-          git add ${{ inputs.output }}
-          git commit -m "Updated ${{ inputs.output }}"
-        fi
-      shell: bash
-
-    - name: Create Pull Request
-      uses: peter-evans/create-pull-request@v3
-      with:
-        base: ${{ steps.branch.outputs.branch }}
-        title: "chore: updated coverage Badge"
-        branch: "chore/update-coverage"
-        commit-message: "Updated README.md"
-        body: "Updated README.md"
-        token: ${{ inputs.token }}
 
 branding:
   icon: check-circle

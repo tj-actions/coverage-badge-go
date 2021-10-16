@@ -20,8 +20,7 @@ jobs:
         uses: tj-actions/verify-changed-files@v8
         id: verify_changed_files
         with:
-          files: |
-            README.md
+          files: README.md
 
       - name: README.md changed
         if: steps.verify_changed_files.outputs.files_changed == 'true'
