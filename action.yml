@@ -101,19 +101,14 @@ runs:
         if [[ '${{ steps.verify-changed-files.outputs.files_changed }}' == 'true' ]]; then
           git config --local user.email "${{ inputs.email }}"
           git config --local user.name "${{ inputs.username }}"
-          git pull
           git add ${{ inputs.output }}
           git commit -m "Updated ${{ inputs.output }}"
         fi
       shell: bash
 
-    - name: Branch name
-      run: |
-        BRANCH="${{ github.ref }}"
-        if [[ "${{ github.event }}" == "pull_request" ]]; then
-          BRANCH="${{ github.head_ref }}"
-        fi
-      shell: bash
+    - name: Get branch name
+      id: branch-name
+      uses: tj-actions/branch-names@v5
 
     - name: Push migration changes
       uses: ad-m/github-push-action@master
