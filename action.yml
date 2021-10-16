@@ -117,7 +117,7 @@ runs:
         if [[ "${{ github.event }}" == "pull_request" ]]; then
           BRANCH="${{ steps.branch-name.outputs.base_ref_branch }}"
         fi
-        echo "::set-output name=current_branch::$(eval printf "%s" "$REF_BRANCH")"
+        echo "::set-output name=branch::$(eval printf "%s" "$BRANCH")"
       shell: bash
 
     - name: Create Pull Request
