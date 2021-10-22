@@ -15,6 +15,13 @@ body:
       options:
         - label: I have searched the existing issues
           required: true
+  - type: checkboxes
+    attributes:
+      label: Does this issue exist in the latest version?
+      description: Please view all releases to confirm that this issue hasn't already been fixed.
+      options:
+        - label: I'm using the latest release
+          required: true
   - type: textarea
     id: what-happened
     attributes:
@@ -41,6 +48,7 @@ body:
       label: What OS are you seeing the problem on?
       multiple: true
       options:
+        - all
         - ubuntu-latest or ubuntu-20.04
         - ubuntu-18.04
         - macos-latest or macos-10.15
