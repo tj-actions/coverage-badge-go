@@ -53,7 +53,7 @@ jobs:
           filename: test/coverage.out
 
       - name: Verify Changed files
-        uses: tj-actions/verify-changed-files@v8.7
+        uses: tj-actions/verify-changed-files@v8.8
         id: verify-changed-files
         with:
           files: README.md
