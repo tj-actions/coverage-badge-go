@@ -72,9 +72,19 @@ jobs:
 
 ## Inputs
 
-|   Input       |    type    |  required     |  default                      |  description  |
-|:-------------:|:-----------:|:-------------:|:----------------------------:|:-------------:|
-| filename      |  `string`   |     `true`   | `coverage.out`               |  File containing the <br /> tests output <br />(default: "coverage.out") |
+<!-- AUTO-DOC-INPUT:START - Do not remove or modify this section -->
+
+|  INPUT   |  TYPE  | REQUIRED |    DEFAULT     |                                      DESCRIPTION                                      |
+|----------|--------|----------|----------------|---------------------------------------------------------------------------------------|
+| color    | string | false    |                | Color of the badge -<br>green/yellow/red                                              |
+| filename | string | true     | `coverage.out` | File containing the tests output<br>                                                  |
+| green    | string | false    |                | At what percentage does the<br>badge becomes green instead of<br>yellow (default: 70) |
+| target   | string | false    |                | Target file (default "README.md")                                                     |
+| text     | string | false    |                | Text on the left side<br>of the badge (default: "Coverage")<br>                       |
+| value    | string | false    |                | Text on the right side<br>of the badge                                                |
+| yellow   | string | false    |                | At what percentage does the<br>badge becomes yellow instead of<br>red (default 30)    |
+
+<!-- AUTO-DOC-INPUT:END -->
 
 *   Free software: [MIT license](LICENSE)
 
