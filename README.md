@@ -46,12 +46,12 @@ jobs:
           restore-keys: |
             ${{ runner.os }}-go-
 
-      - name: Run Test  # Pass the `coverage.out` output to this action
+      - name: Run Test
         run:
           go test -v ./... -covermode=count -coverprofile=coverage.out
           go tool cover -func=coverage.out -o=coverage.out
 
-      - name: Go Coverage Badge
+      - name: Go Coverage Badge  # Pass the `coverage.out` output to this action
         uses: tj-actions/coverage-badge-go@v1
         with:
           filename: coverage.out
