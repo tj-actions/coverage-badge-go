@@ -3,7 +3,7 @@ description: Generate coverage badge for go projects
 author: tj-actions
 inputs:
   filename:
-    description: 'File containing the tests output (default: "coverage.out")'
+    description: 'File containing the tests output'
     required: true
     default: coverage.out
   color:
