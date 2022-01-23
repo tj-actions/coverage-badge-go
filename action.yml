@@ -24,18 +24,6 @@ inputs:
   yellow:
     description: 'At what percentage does the badge becomes yellow instead of red (default 30)'
     required: false
-  output:
-    description: 'Output markdown file to update (default: "README.md")'
-    required: false
-    default: 'README.md'
-  username:
-    description: 'Username of the github user (default: github.actor)'
-    required: false
-    default: 'github-actions[bot]'
-  email:
-    description: 'Username of the github user (default: github.actor)'
-    required: false
-    default: 'github-actions[bot]@users.noreply.github.com'
 
 runs:
   using: 'composite'
