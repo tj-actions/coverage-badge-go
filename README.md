@@ -70,10 +70,6 @@ jobs:
           branch: ${{ github.head_ref }}
 ```
 
-## Features
-
-*   Generate coverage badge from a coverage report.
-
 ## Inputs
 
 |   Input       |    type    |  required     |  default                      |  description  |
