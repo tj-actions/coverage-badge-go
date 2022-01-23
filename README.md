@@ -86,10 +86,6 @@ jobs:
 
 <!-- AUTO-DOC-INPUT:END -->
 
-|   Input       |    type    |  required     |  default                      |  description  |
-|:-------------:|:-----------:|:-------------:|:----------------------------:|:-------------:|
-| filename      |  `string`   |     `true`   | `coverage.out`               |  File containing the <br /> tests output <br />(default: "coverage.out") |
-
 *   Free software: [MIT license](LICENSE)
 
 If you feel generous and want to show some extra appreciation:
