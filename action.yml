@@ -10,7 +10,7 @@ inputs:
     description: 'Color of the badge - green/yellow/red'
     required: false
   green:
-    description: 'At what percentage does the badge becomes green instead of yellow (default: 70)'
+    description: 'At what percentage does the badge become green instead of yellow (default: 70)'
     required: false
   target:
     description: 'Target file (default "README.md")'
@@ -22,7 +22,7 @@ inputs:
     description: 'Text on the right side of the badge'
     required: false
   yellow:
-    description: 'At what percentage does the badge becomes yellow instead of red (default 30)'
+    description: 'At what percentage does the badge become yellow instead of red (default 30)'
     required: false
 
 runs:
