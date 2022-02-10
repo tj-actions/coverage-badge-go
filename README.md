@@ -63,7 +63,7 @@ jobs:
           files: README.md
 
       - name: Push changes
-        if: steps.changed_files.outputs.files_changed == 'true'
+        if: steps.verify-changed-files.outputs.files_changed == 'true'
         uses: ad-m/github-push-action@master
         with:
           github_token: ${{ github.token }}
