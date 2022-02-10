@@ -2,7 +2,7 @@
 
 <img align="right" width="250px" src="https://user-images.githubusercontent.com/17484350/138557170-d8079b94-a517-4366-ade8-8d473e3f3f1d.jpg">
 
-Generate a coverage badge like this one for your Golang projects.
+Generate a coverage badge like this one for your Golang projects without uploading to a third party.
 
                   👇
 
