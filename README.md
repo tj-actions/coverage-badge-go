@@ -47,7 +47,7 @@ jobs:
             ${{ runner.os }}-go-
 
       - name: Run Test
-        run:
+        run: |
           go test -v ./... -covermode=count -coverprofile=coverage.out
           go tool cover -func=coverage.out -o=coverage.out
 
