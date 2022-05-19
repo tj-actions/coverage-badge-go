@@ -52,7 +52,7 @@ jobs:
           go tool cover -func=coverage.out -o=coverage.out
 
       - name: Go Coverage Badge  # Pass the `coverage.out` output to this action
-        uses: tj-actions/coverage-badge-go@v1.1
+        uses: tj-actions/coverage-badge-go@v1.2
         with:
           filename: coverage.out
 

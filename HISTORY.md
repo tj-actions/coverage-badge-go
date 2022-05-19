@@ -1,5 +1,46 @@
 # Changelog
 
+## [Unreleased](https://github.com/tj-actions/coverage-badge-go/tree/HEAD)
+
+[Full Changelog](https://github.com/tj-actions/coverage-badge-go/compare/v1.2...HEAD)
+
+**Closed issues:**
+
+- Dependency Dashboard [\#6](https://github.com/tj-actions/coverage-badge-go/issues/6)
+
+## [v1.2](https://github.com/tj-actions/coverage-badge-go/tree/v1.2) (2022-05-12)
+
+[Full Changelog](https://github.com/tj-actions/coverage-badge-go/compare/v1.1...v1.2)
+
+**Fixed bugs:**
+
+- \[BUG\] \<cannot use -o flag with multiple packages\> [\#46](https://github.com/tj-actions/coverage-badge-go/issues/46)
+- \[BUG\] \<why my badge generated not in % form\>  [\#45](https://github.com/tj-actions/coverage-badge-go/issues/45)
+- Doc error [\#39](https://github.com/tj-actions/coverage-badge-go/issues/39)
+
+**Merged pull requests:**
+
+- Update pascalgn/automerge-action action to v0.15.3 [\#55](https://github.com/tj-actions/coverage-badge-go/pull/55) ([renovate[bot]](https://github.com/apps/renovate))
+- Update cirrus-actions/rebase action to v1.7 [\#54](https://github.com/tj-actions/coverage-badge-go/pull/54) ([renovate[bot]](https://github.com/apps/renovate))
+- Update cirrus-actions/rebase action to v1.6 [\#53](https://github.com/tj-actions/coverage-badge-go/pull/53) ([renovate[bot]](https://github.com/apps/renovate))
+- Update pascalgn/automerge-action action to v0.15.2 [\#52](https://github.com/tj-actions/coverage-badge-go/pull/52) ([renovate[bot]](https://github.com/apps/renovate))
+- Update peter-evans/create-pull-request action to v4 [\#51](https://github.com/tj-actions/coverage-badge-go/pull/51) ([renovate[bot]](https://github.com/apps/renovate))
+- Update actions/cache action to v3 [\#50](https://github.com/tj-actions/coverage-badge-go/pull/50) ([renovate[bot]](https://github.com/apps/renovate))
+- Update tj-actions/auto-doc action to v1.2.14 [\#49](https://github.com/tj-actions/coverage-badge-go/pull/49) ([renovate[bot]](https://github.com/apps/renovate))
+- Update tj-actions/github-changelog-generator action to v1.13 [\#48](https://github.com/tj-actions/coverage-badge-go/pull/48) ([renovate[bot]](https://github.com/apps/renovate))
+- Update tj-actions/verify-changed-files action to v9 [\#47](https://github.com/tj-actions/coverage-badge-go/pull/47) ([renovate[bot]](https://github.com/apps/renovate))
+- Update actions/checkout action to v3 [\#44](https://github.com/tj-actions/coverage-badge-go/pull/44) ([renovate[bot]](https://github.com/apps/renovate))
+- Update actions/setup-go action to v3 [\#43](https://github.com/tj-actions/coverage-badge-go/pull/43) ([renovate[bot]](https://github.com/apps/renovate))
+- Update tj-actions/github-changelog-generator action to v1.12 [\#42](https://github.com/tj-actions/coverage-badge-go/pull/42) ([renovate[bot]](https://github.com/apps/renovate))
+- Update tj-actions/sync-release-version action to v11 [\#41](https://github.com/tj-actions/coverage-badge-go/pull/41) ([renovate[bot]](https://github.com/apps/renovate))
+- chore: fix usage of incorrect action id [\#40](https://github.com/tj-actions/coverage-badge-go/pull/40) ([jackton1](https://github.com/jackton1))
+- Update tj-actions/auto-doc action to v1.2.13 [\#38](https://github.com/tj-actions/coverage-badge-go/pull/38) ([renovate[bot]](https://github.com/apps/renovate))
+- Updated README.md [\#37](https://github.com/tj-actions/coverage-badge-go/pull/37) ([jackton1](https://github.com/jackton1))
+- Update tj-actions/auto-doc action to v1.2.11 [\#36](https://github.com/tj-actions/coverage-badge-go/pull/36) ([renovate[bot]](https://github.com/apps/renovate))
+- Updated README.md [\#35](https://github.com/tj-actions/coverage-badge-go/pull/35) ([jackton1](https://github.com/jackton1))
+- Updated README.md [\#34](https://github.com/tj-actions/coverage-badge-go/pull/34) ([jackton1](https://github.com/jackton1))
+- Upgraded to v1.1 [\#33](https://github.com/tj-actions/coverage-badge-go/pull/33) ([jackton1](https://github.com/jackton1))
+
 ## [v1.1](https://github.com/tj-actions/coverage-badge-go/tree/v1.1) (2022-01-23)
 
 [Full Changelog](https://github.com/tj-actions/coverage-badge-go/compare/v1...v1.1)
@@ -7,10 +48,6 @@
 **Implemented enhancements:**
 
 - \[Feature\] Rename filename to path [\#20](https://github.com/tj-actions/coverage-badge-go/issues/20)
-
-**Closed issues:**
-
-- Dependency Dashboard [\#6](https://github.com/tj-actions/coverage-badge-go/issues/6)
 
 **Merged pull requests:**
 
