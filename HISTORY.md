@@ -1,12 +1,25 @@
 # Changelog
 
-## [Unreleased](https://github.com/tj-actions/coverage-badge-go/tree/HEAD)
+## [v2](https://github.com/tj-actions/coverage-badge-go/tree/v2) (2022-08-18)
 
-[Full Changelog](https://github.com/tj-actions/coverage-badge-go/compare/v1.2...HEAD)
+[Full Changelog](https://github.com/tj-actions/coverage-badge-go/compare/v1.2...v2)
 
 **Closed issues:**
 
 - Dependency Dashboard [\#6](https://github.com/tj-actions/coverage-badge-go/issues/6)
+
+**Merged pull requests:**
+
+- feat: switch to use a temp directory [\#65](https://github.com/tj-actions/coverage-badge-go/pull/65) ([jackton1](https://github.com/jackton1))
+- Update tj-actions/verify-changed-files action to v10 [\#64](https://github.com/tj-actions/coverage-badge-go/pull/64) ([renovate[bot]](https://github.com/apps/renovate))
+- Update tj-actions/auto-doc action to v1.3.1 [\#63](https://github.com/tj-actions/coverage-badge-go/pull/63) ([renovate[bot]](https://github.com/apps/renovate))
+- Update tj-actions/auto-doc action to v1.3.0 [\#62](https://github.com/tj-actions/coverage-badge-go/pull/62) ([renovate[bot]](https://github.com/apps/renovate))
+- Update tj-actions/github-changelog-generator action to v1.14 [\#61](https://github.com/tj-actions/coverage-badge-go/pull/61) ([renovate[bot]](https://github.com/apps/renovate))
+- Update tj-actions/verify-changed-files action to v10 [\#60](https://github.com/tj-actions/coverage-badge-go/pull/60) ([renovate[bot]](https://github.com/apps/renovate))
+- Update tj-actions/verify-changed-files action to v9.2 [\#59](https://github.com/tj-actions/coverage-badge-go/pull/59) ([renovate[bot]](https://github.com/apps/renovate))
+- Update tj-actions/verify-changed-files action to v9 [\#58](https://github.com/tj-actions/coverage-badge-go/pull/58) ([renovate[bot]](https://github.com/apps/renovate))
+- Update tj-actions/auto-doc action to v1.2.15 [\#57](https://github.com/tj-actions/coverage-badge-go/pull/57) ([renovate[bot]](https://github.com/apps/renovate))
+- Upgraded to v1.2 [\#56](https://github.com/tj-actions/coverage-badge-go/pull/56) ([jackton1](https://github.com/jackton1))
 
 ## [v1.2](https://github.com/tj-actions/coverage-badge-go/tree/v1.2) (2022-05-12)
 
