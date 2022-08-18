@@ -58,7 +58,7 @@ runs:
         TEMP_DIR=$(mktemp -d)
         curl -sf https://gobinaries.com/github.com/AlexBeauchemin/gobadge@v0.2.0 | PREFIX=$TEMP_DIR sh
         $TEMP_DIR/gobadge -filename=${{ inputs.filename }} $EXTRA_ARGS
-        rm -f $TEMP_DIR
+        rm -rf $TEMP_DIR
       id: coverage-badge-go
       shell: bash
 
