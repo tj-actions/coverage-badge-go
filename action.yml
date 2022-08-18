@@ -54,10 +54,11 @@ runs:
         if [[ -n '${{ inputs.yellow }}'  ]]; then
           EXTRA_ARGS+="-yellow=${{ inputs.yellow }}"
         fi
-
-        curl -sf https://gobinaries.com/github.com/AlexBeauchemin/gobadge@v0.2.0 | PREFIX=. sh
-        ./gobadge -filename=${{ inputs.filename }} $EXTRA_ARGS
-        rm -f ./gobadge
+        
+        TEMP_DIR=$(mktemp -d)
+        curl -sf https://gobinaries.com/github.com/AlexBeauchemin/gobadge@v0.2.0 | PREFIX=$TEMP_DIR sh
+        $TEMP_DIR/gobadge -filename=${{ inputs.filename }} $EXTRA_ARGS
+        rm -f $TEMP_DIR
       id: coverage-badge-go
       shell: bash
 
