@@ -78,6 +78,10 @@ jobs:
           branch: ${{ github.head_ref }}
 ```
 
+## Signed commits
+
+In order to create signed commits see full guide [here](https://httgp.com/signing-commits-in-github-actions/)
+
 ## Inputs
 
 <!-- AUTO-DOC-INPUT:START - Do not remove or modify this section -->
@@ -93,10 +97,6 @@ jobs:
 | yellow   | string | false    |                  | At what percentage does the<br>badge become yellow instead of<br>red (default 30)    |
 
 <!-- AUTO-DOC-INPUT:END -->
-
-## Signed commits
-
-In order to create signed commits see full guide [here](https://httgp.com/signing-commits-in-github-actions/)
 
 *   Free software: [MIT license](LICENSE)
 
