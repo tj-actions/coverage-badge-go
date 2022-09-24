@@ -94,7 +94,7 @@ jobs:
 
 <!-- AUTO-DOC-INPUT:END -->
 
-### Signed commits
+## Signed commits
 
 In order to create signed commits see full guide [here](https://httgp.com/signing-commits-in-github-actions/)
 
