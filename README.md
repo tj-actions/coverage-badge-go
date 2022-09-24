@@ -94,6 +94,10 @@ jobs:
 
 <!-- AUTO-DOC-INPUT:END -->
 
+### Signed commits
+
+In order to create signed commits see full guide [here](https://httgp.com/signing-commits-in-github-actions/)
+
 *   Free software: [MIT license](LICENSE)
 
 If you feel generous and want to show some extra appreciation:
