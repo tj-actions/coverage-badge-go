@@ -18,6 +18,8 @@ Generate a coverage badge like this one for your Golang projects without uploadi
 ## Usage
 
 ```yaml
+name: Generate code coverage badge
+
 on:
   pull_request:
     branches:
