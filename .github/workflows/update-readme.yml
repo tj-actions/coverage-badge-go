@@ -9,35 +9,36 @@ jobs:
   sync-assets:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v3
+      - uses: actions/checkout@v3.2.0
         with:
           fetch-depth: 0
-          
+
       - name: Run auto-doc
         uses: tj-actions/auto-doc@v1.7.1
 
       - name: Run test
-        uses: tj-actions/remark@v2.3
+        uses: tj-actions/remark@v3
 
       - name: Verify Changed files
         uses: tj-actions/verify-changed-files@v13
-        id: verify-changed-files
+        id: verify_changed_files
         with:
-          files: README.md
+          files: |
+            README.md
 
       - name: README.md changed
-        if: steps.verify-changed-files.outputs.files_changed == 'true'
+        if: steps.verify_changed_files.outputs.files_changed == 'true'
         run: |
-          echo "README.md has uncommited changes"
+          echo "README.md has uncommitted changes"
           exit 1
 
       - name: Create Pull Request
         if: failure()
-        uses: peter-evans/create-pull-request@v4
+        uses: peter-evans/create-pull-request@v4.2.3
         with:
           base: "main"
-          title: "Updated README.md"
           labels: "merge when passing"
+          title: "Updated README.md"
           branch: "chore/update-readme"
           commit-message: "Updated README.md"
           body: "Updated README.md"
