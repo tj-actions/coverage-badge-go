@@ -1,7 +1,7 @@
 [![Ubuntu](https://img.shields.io/badge/Ubuntu-E95420?style=for-the-badge\&logo=ubuntu\&logoColor=white)](https://docs.github.com/en/actions/reference/workflow-syntax-for-github-actions#jobsjob_idruns-on)
 [![Mac OS](https://img.shields.io/badge/mac%20os-000000?style=for-the-badge\&logo=macos\&logoColor=F0F0F0)](https://docs.github.com/en/actions/reference/workflow-syntax-for-github-actions#jobsjob_idruns-on)
 [![Windows](https://img.shields.io/badge/Windows-0078D6?style=for-the-badge\&logo=windows\&logoColor=white)](https://docs.github.com/en/actions/reference/workflow-syntax-for-github-actions#jobsjob_idruns-on)
-[![Public workflows that use this action.](https://img.shields.io/endpoint?style=for-the-badge&url=https%3A%2F%2Fused-by.vercel.app%2Fapi%2Fgithub-actions%2Fused-by%3Faction%3Dtj-actions%2Fcoverage-badge-go%26badge%3Dtrue)](https://github.com/search?o=desc\&q=tj-actions+coverage-badge-go+path%3A.github%2Fworkflows+language%3AYAML\&s=\&type=Code)
+[![Public workflows that use this action.](https://img.shields.io/endpoint?style=for-the-badge\&url=https%3A%2F%2Fused-by.vercel.app%2Fapi%2Fgithub-actions%2Fused-by%3Faction%3Dtj-actions%2Fcoverage-badge-go%26badge%3Dtrue)](https://github.com/search?o=desc\&q=tj-actions+coverage-badge-go+path%3A.github%2Fworkflows+language%3AYAML\&s=\&type=Code)
 
 ## coverage-badge-go
 
@@ -14,7 +14,6 @@ Generate a coverage badge like this one for your Golang projects without uploadi
 [![CI](https://github.com/tj-actions/coverage-badge-go/workflows/CI/badge.svg)](https://github.com/tj-actions/coverage-badge-go/actions?query=workflow%3ACI)
 ![Coverage](https://img.shields.io/badge/Coverage-100.0%25-brightgreen)
 [![Update release version.](https://github.com/tj-actions/coverage-badge-go/workflows/Update%20release%20version./badge.svg)](https://github.com/tj-actions/coverage-badge-go/actions?query=workflow%3A%22Update+release+version.%22)
-
 
 ## Usage
 
@@ -89,15 +88,15 @@ In order to create signed commits see full guide [here](https://httgp.com/signin
 
 <!-- AUTO-DOC-INPUT:START - Do not remove or modify this section -->
 
-|  INPUT   |  TYPE  | REQUIRED |     DEFAULT      |                                      DESCRIPTION                                      |
-|----------|--------|----------|------------------|---------------------------------------------------------------------------------------|
-|  color   | string |  false   |                  |                       Color of the badge -<br>green/yellow/red                        |
-| filename | string |   true   | `"coverage.out"` |                           File containing the tests output                            |
-|  green   | string |  false   |                  | At what percentage does the<br> badge become green instead of<br>yellow (default: 70) |
-|  target  | string |  false   |                  |                           Target file (default "README.md")                           |
-|   text   | string |  false   |                  |              Text on the left side<br>of the badge (default: "Coverage")              |
-|  value   | string |  false   |                  |                        Text on the right side<br>of the badge                         |
-|  yellow  | string |  false   |                  |  At what percentage does the<br> badge become yellow instead of<br>red (default 30)   |
+|  INPUT   |  TYPE  | REQUIRED |     DEFAULT      |                                       DESCRIPTION                                       |
+|----------|--------|----------|------------------|-----------------------------------------------------------------------------------------|
+|  color   | string |  false   |                  |                       Color of the badge - <br>green/yellow/red                         |
+| filename | string |   true   | `"coverage.out"` |                            File containing the tests output                             |
+|  green   | string |  false   |                  | At what percentage does the <br>badge become green instead of <br>yellow (default: 70)  |
+|  target  | string |  false   |                  |                            Target file (default "README.md")                            |
+|   text   | string |  false   |                  |              Text on the left side <br>of the badge (default: "Coverage")               |
+|  value   | string |  false   |                  |                        Text on the right side <br>of the badge                          |
+|  yellow  | string |  false   |                  |  At what percentage does the <br>badge become yellow instead of <br>red (default 30)    |
 
 <!-- AUTO-DOC-INPUT:END -->
 
