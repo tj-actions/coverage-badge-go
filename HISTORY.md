@@ -1,5 +1,43 @@
 # Changelog
 
+# [2.3](https://github.com/tj-actions/coverage-badge-go/compare/v2.2...v2.3) - (2023-07-05)
+
+## <!-- 16 -->➕ Add
+
+- Create dependabot.yml ([442a4d8](https://github.com/tj-actions/coverage-badge-go/commit/442a4d8087468eab663cf40e6bf89b5ccbc9f0b0))  - (Tonye Jack)
+- Create FUNDING.yml ([5f51ccf](https://github.com/tj-actions/coverage-badge-go/commit/5f51ccfaa2a9a9ab8ade604d5bca40535526caf0))  - (Tonye Jack)
+
+## <!-- 17 -->➖ Remove
+
+- Deleted .github/workflows/auto-merge.yml ([1c23fb0](https://github.com/tj-actions/coverage-badge-go/commit/1c23fb01107b539eca85e0a5683e6c3ab51069cb))  - (Tonye Jack)
+
+## <!-- 26 -->🔄 Update
+
+- Updated renovate.json ([95aecc4](https://github.com/tj-actions/coverage-badge-go/commit/95aecc4a359f9a7c8bde5f79312443ecf2af9a24))  - (Tonye Jack)
+- Updated README.md
+ ([a7efa98](https://github.com/tj-actions/coverage-badge-go/commit/a7efa98726c32d13af57183b540a66000827f8f9))  - (jackton1)
+- Updated README.md
+ ([dcb3c37](https://github.com/tj-actions/coverage-badge-go/commit/dcb3c37ad5916ebcb8cccd1b385516b791c07381))  - (jackton1)
+
+## <!-- 30 -->📝 Other
+
+- PR [#114](https://github.com/tj-actions/coverage-badge-go/pull/114): README.md ([5f8f005](https://github.com/tj-actions/coverage-badge-go/commit/5f8f00560aa967631385a54811c1745ca623309d))  - (repo-ranger[bot])
+- PR [#112](https://github.com/tj-actions/coverage-badge-go/pull/112): README.md ([f375af6](https://github.com/tj-actions/coverage-badge-go/commit/f375af696b96d6096482148cc77e9ce8384f34e5))  - (Tonye Jack)
+- PR [#110](https://github.com/tj-actions/coverage-badge-go/pull/110): to v2.2 ([92a7dcd](https://github.com/tj-actions/coverage-badge-go/commit/92a7dcd6ff7aaa676c2f9e4d77f86ec49a2fe3c6))  - (repo-ranger[bot])
+
+## <!-- 7 -->⚙️ Miscellaneous Tasks
+
+- **deps:** Update tj-actions/verify-changed-files action to v16 ([382a4ba](https://github.com/tj-actions/coverage-badge-go/commit/382a4ba501477b680a724eb8c1f08b68d19f6a66))  - (renovate[bot])
+- **deps:** Update peter-evans/create-pull-request action to v5.0.2 ([78d1d9a](https://github.com/tj-actions/coverage-badge-go/commit/78d1d9a64945d652cc819980ae2d0434f9ba17bf))  - (renovate[bot])
+- **deps:** Update tj-actions/verify-changed-files action to v15 ([c619e31](https://github.com/tj-actions/coverage-badge-go/commit/c619e31c67fab4434c637d5ee9ffd697e4afd7fe))  - (renovate[bot])
+- Update readme ([#113](https://github.com/tj-actions/coverage-badge-go/issues/113)) ([6749355](https://github.com/tj-actions/coverage-badge-go/commit/6749355f12f5fe110c5ee6c0fbd4863250e68bf4))  - (Tonye Jack)
+- **deps:** Update peter-evans/create-pull-request action to v5.0.1 ([68133dc](https://github.com/tj-actions/coverage-badge-go/commit/68133dc829fcdc3ef68b08fb95dbf2c17c7cfee7))  - (renovate[bot])
+
+## <!-- 9 -->⬆️ Upgrades
+
+- Upgraded from v2.1 -> v2.2
+ ([0106ba2](https://github.com/tj-actions/coverage-badge-go/commit/0106ba2aff32144de72f52ce87707561ad463e48))  - (jackton1)
+
 # [2.2](https://github.com/tj-actions/coverage-badge-go/compare/v2.1...v2.2) - (2023-04-09)
 
 ## <!-- 16 -->➕ Add
