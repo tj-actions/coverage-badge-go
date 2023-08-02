@@ -12,7 +12,7 @@ Generate a coverage badge like this one for your Golang projects without uploadi
                   👇
 
 [![CI](https://github.com/tj-actions/coverage-badge-go/workflows/CI/badge.svg)](https://github.com/tj-actions/coverage-badge-go/actions?query=workflow%3ACI)
-![Coverage](https://img.shields.io/badge/Coverage-100.0%25-brightgreen)
+[![Coverage](https://img.shields.io/badge/Coverage-100.0%25-brightgreen)](https://github.com/tj-actions/coverage-badge-go/actions/workflows/test.yml)
 [![Update release version.](https://github.com/tj-actions/coverage-badge-go/workflows/Update%20release%20version./badge.svg)](https://github.com/tj-actions/coverage-badge-go/actions?query=workflow%3A%22Update+release+version.%22)
 
 ## Usage
