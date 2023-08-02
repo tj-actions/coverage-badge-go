@@ -93,6 +93,7 @@ In order to create signed commits see full guide [here](https://httgp.com/signin
 |  color   | string |  false   |                  |                       Color of the badge - <br>green/yellow/red                         |
 | filename | string |   true   | `"coverage.out"` |                            File containing the tests output                             |
 |  green   | string |  false   |                  | At what percentage does the <br>badge become green instead of <br>yellow (default: 70)  |
+|   link   | string |  false   |                  |                       Optional URL when you click <br>the badge                         |
 |  target  | string |  false   |                  |                            Target file (default "README.md")                            |
 |   text   | string |  false   |                  |              Text on the left side <br>of the badge (default: "Coverage")               |
 |  value   | string |  false   |                  |                        Text on the right side <br>of the badge                          |
