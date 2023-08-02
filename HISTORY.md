@@ -1,5 +1,50 @@
 # Changelog
 
+# [2.4](https://github.com/tj-actions/coverage-badge-go/compare/v2.3...v2.4) - (2023-08-02)
+
+## <!-- 0 -->🚀 Features
+
+- Add support for specifying a link ([#120](https://github.com/tj-actions/coverage-badge-go/issues/120)) ([602729a](https://github.com/tj-actions/coverage-badge-go/commit/602729a8131056231559831afc4abd406231c0a3))  - (Tonye Jack)
+
+## <!-- 13 -->📦 Bumps
+
+- Bump hmarr/auto-approve-action from 2 to 3 ([#119](https://github.com/tj-actions/coverage-badge-go/issues/119))
+
+Bumps [hmarr/auto-approve-action](https://github.com/hmarr/auto-approve-action) from 2 to 3.
+- [Release notes](https://github.com/hmarr/auto-approve-action/releases)
+- [Commits](https://github.com/hmarr/auto-approve-action/compare/v2...v3)
+
+---
+updated-dependencies:
+- dependency-name: hmarr/auto-approve-action
+  dependency-type: direct:production
+  update-type: version-update:semver-major
+...
+
+Signed-off-by: dependabot[bot] <support@github.com>
+Co-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com> ([0533d14](https://github.com/tj-actions/coverage-badge-go/commit/0533d14d8631ef6fbd1b910d62eb7d71bb9dd9c5))  - (dependabot[bot])
+
+## <!-- 26 -->🔄 Update
+
+- Updated README.md ([#121](https://github.com/tj-actions/coverage-badge-go/issues/121))
+
+Co-authored-by: jackton1 <jackton1@users.noreply.github.com> ([bb7c737](https://github.com/tj-actions/coverage-badge-go/commit/bb7c737ea941ce5aac571a1a7e0b9f3f611adc9f))  - (tj-actions[bot])
+- Update test.yml ([c5a67fb](https://github.com/tj-actions/coverage-badge-go/commit/c5a67fb1ade3de0d984db59a657100bdab502781))  - (Tonye Jack)
+- Update dependabot.yml ([173e1db](https://github.com/tj-actions/coverage-badge-go/commit/173e1dbb5bbfd8f0fbadcfadb9adeb531bbb51ef))  - (Tonye Jack)
+
+## <!-- 30 -->📝 Other
+
+- PR [#118](https://github.com/tj-actions/coverage-badge-go/pull/118): to v2.3 ([bbb731d](https://github.com/tj-actions/coverage-badge-go/commit/bbb731dc3b89f2ef28678a85d7121f3d85c17062))  - (repo-ranger[bot])
+
+## <!-- 7 -->⚙️ Miscellaneous Tasks
+
+- Updated coverage badge ([#122](https://github.com/tj-actions/coverage-badge-go/issues/122)) ([497bd32](https://github.com/tj-actions/coverage-badge-go/commit/497bd321c004bde52e5f112e0a6943cf32055ee6))  - (tj-actions[bot])
+
+## <!-- 9 -->⬆️ Upgrades
+
+- Upgraded from v2.2 -> v2.3
+ ([aa07fa4](https://github.com/tj-actions/coverage-badge-go/commit/aa07fa470d482b4546089a43005d9c429ff695ea))  - (jackton1)
+
 # [2.3](https://github.com/tj-actions/coverage-badge-go/compare/v2.2...v2.3) - (2023-07-05)
 
 ## <!-- 16 -->➕ Add
