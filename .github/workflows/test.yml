@@ -51,6 +51,7 @@ jobs:
         uses: ./
         with:
           filename: test/coverage.out
+          link: ${{ github.server_url }}/${{ github.repository }}/actions/workflows/test.yml
 
       - name: Verify Changed files
         uses: tj-actions/verify-changed-files@v13.1
