@@ -1,0 +1,27 @@
+{
+  "files": [
+    "README.md"
+  ],
+  "imageSize": 100,
+  "commit": false,
+  "commitType": "docs",
+  "commitConvention": "angular",
+  "contributors": [
+    {
+      "login": "mdonahue-godaddy",
+      "name": "Michael Donahue",
+      "avatar_url": "https://avatars.githubusercontent.com/u/81647737?v=4",
+      "profile": "https://github.com/mdonahue-godaddy",
+      "contributions": [
+        "bug",
+        "code"
+      ]
+    }
+  ],
+  "contributorsPerLine": 7,
+  "skipCi": true,
+  "repoType": "github",
+  "repoHost": "https://github.com",
+  "projectName": "coverage-badge-go",
+  "projectOwner": "tj-actions"
+}
