@@ -35,31 +35,31 @@ runs:
         EXTRA_ARGS=""
 
         if [[ -n '${{ inputs.color }}'  ]]; then
-          EXTRA_ARGS+="-color=${{ inputs.color }}"
+          EXTRA_ARGS="${EXTRA_ARGS} -color=${{ inputs.color }}"
         fi
 
         if [[ -n '${{ inputs.green }}'  ]]; then
-          EXTRA_ARGS+="-green=${{ inputs.green }}"
+          EXTRA_ARGS="${EXTRA_ARGS} -green=${{ inputs.green }}"
         fi
 
         if [[ -n '${{ inputs.target }}'  ]]; then
-          EXTRA_ARGS+="-target=${{ inputs.target }}"
+          EXTRA_ARGS="${EXTRA_ARGS} -target=${{ inputs.target }}"
         fi
 
         if [[ -n '${{ inputs.text }}'  ]]; then
-          EXTRA_ARGS+="-text=${{ inputs.text }}"
+          EXTRA_ARGS="${EXTRA_ARGS} -text=${{ inputs.text }}"
         fi
 
         if [[ -n '${{ inputs.value }}'  ]]; then
-          EXTRA_ARGS+="-value=${{ inputs.value }}"
+          EXTRA_ARGS="${EXTRA_ARGS} -value=${{ inputs.value }}"
         fi
 
         if [[ -n '${{ inputs.yellow }}'  ]]; then
-          EXTRA_ARGS+="-yellow=${{ inputs.yellow }}"
+          EXTRA_ARGS="${EXTRA_ARGS} -yellow=${{ inputs.yellow }}"
         fi
 
         if [[ -n '${{ inputs.link }}'  ]]; then
-          EXTRA_ARGS+="-link=${{ inputs.link }}"
+          EXTRA_ARGS="${EXTRA_ARGS} -link=${{ inputs.link }}"
         fi
         
         TEMP_DIR=$(mktemp -d)
