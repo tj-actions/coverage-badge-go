@@ -1,5 +1,31 @@
 # Changelog
 
+# [2.4.1](https://github.com/tj-actions/coverage-badge-go/compare/v2.4...v2.4.1) - (2023-08-20)
+
+## <!-- 1 -->🐛 Bug Fixes
+
+- Add spaces between extra arguments to prevent errors ([#125](https://github.com/tj-actions/coverage-badge-go/issues/125)) ([23e9b07](https://github.com/tj-actions/coverage-badge-go/commit/23e9b076cfd84c2be5def80168d67219b69985bb))  - (Michael Donahue)
+
+## <!-- 26 -->🔄 Update
+
+- Updated README.md
+ ([ba2b7c1](https://github.com/tj-actions/coverage-badge-go/commit/ba2b7c1c941205ee3bc2077bb564b7d80c27bce9))  - (jackton1)
+
+## <!-- 3 -->📚 Documentation
+
+- Add mdonahue-godaddy as a contributor for bug, and code ([#126](https://github.com/tj-actions/coverage-badge-go/issues/126)) ([ec47d34](https://github.com/tj-actions/coverage-badge-go/commit/ec47d349bdd5ea7f35c984f0e7ca815dc681a76c))  - (allcontributors[bot])
+
+## <!-- 30 -->📝 Other
+
+- PR [#124](https://github.com/tj-actions/coverage-badge-go/pull/124): to v2.4 ([5954584](https://github.com/tj-actions/coverage-badge-go/commit/5954584d44e65682122b946469ae43da22d9bbda))  - (repo-ranger[bot])
+- PR [#123](https://github.com/tj-actions/coverage-badge-go/pull/123): README.md ([5a7c13b](https://github.com/tj-actions/coverage-badge-go/commit/5a7c13b8d06d46780b279d6a167d6b00b14fc2f2))  - (repo-ranger[bot])
+- Merge branch 'main' into chore/update-readme ([39650cf](https://github.com/tj-actions/coverage-badge-go/commit/39650cf9af11062730a808108f01526ac8cac009))  - (repo-ranger[bot])
+
+## <!-- 9 -->⬆️ Upgrades
+
+- Upgraded from v2.3 -> v2.4
+ ([f2ca982](https://github.com/tj-actions/coverage-badge-go/commit/f2ca9826d8b0fa11cb5657cd9d5841b389ecde43))  - (jackton1)
+
 # [2.4](https://github.com/tj-actions/coverage-badge-go/compare/v2.3...v2.4) - (2023-08-02)
 
 ## <!-- 0 -->🚀 Features
