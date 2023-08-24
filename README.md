@@ -94,16 +94,16 @@ In order to create signed commits see full guide [here](https://httgp.com/signin
 
 <!-- AUTO-DOC-INPUT:START - Do not remove or modify this section -->
 
-|  INPUT   |  TYPE  | REQUIRED |     DEFAULT      |                                       DESCRIPTION                                       |
-|----------|--------|----------|------------------|-----------------------------------------------------------------------------------------|
-|  color   | string |  false   |                  |                       Color of the badge - <br>green/yellow/red                         |
-| filename | string |   true   | `"coverage.out"` |                            File containing the tests output                             |
-|  green   | string |  false   |                  | At what percentage does the <br>badge become green instead of <br>yellow (default: 70)  |
-|   link   | string |  false   |                  |                       Optional URL when you click <br>the badge                         |
-|  target  | string |  false   |                  |                            Target file (default "README.md")                            |
-|   text   | string |  false   |                  |              Text on the left side <br>of the badge (default: "Coverage")               |
-|  value   | string |  false   |                  |                        Text on the right side <br>of the badge                          |
-|  yellow  | string |  false   |                  |  At what percentage does the <br>badge become yellow instead of <br>red (default 30)    |
+|                          INPUT                           |  TYPE  | REQUIRED |     DEFAULT      |                                       DESCRIPTION                                       |
+|----------------------------------------------------------|--------|----------|------------------|-----------------------------------------------------------------------------------------|
+|     <a name="input_color"></a>[color](#input_color)      | string |  false   |                  |                       Color of the badge - <br>green/yellow/red                         |
+| <a name="input_filename"></a>[filename](#input_filename) | string |   true   | `"coverage.out"` |                            File containing the tests output                             |
+|     <a name="input_green"></a>[green](#input_green)      | string |  false   |                  | At what percentage does the <br>badge become green instead of <br>yellow (default: 70)  |
+|       <a name="input_link"></a>[link](#input_link)       | string |  false   |                  |                       Optional URL when you click <br>the badge                         |
+|    <a name="input_target"></a>[target](#input_target)    | string |  false   |                  |                            Target file (default "README.md")                            |
+|       <a name="input_text"></a>[text](#input_text)       | string |  false   |                  |              Text on the left side <br>of the badge (default: "Coverage")               |
+|     <a name="input_value"></a>[value](#input_value)      | string |  false   |                  |                        Text on the right side <br>of the badge                          |
+|    <a name="input_yellow"></a>[yellow](#input_yellow)    | string |  false   |                  |  At what percentage does the <br>badge become yellow instead of <br>red (default 30)    |
 
 <!-- AUTO-DOC-INPUT:END -->
 
