@@ -45,7 +45,7 @@ jobs:
       - name: Setup go
         uses: actions/setup-go@v4
         with:
-          go-version: '1.14.4'
+          go-version-file: 'go.mod'
 
       - uses: actions/cache@v3
         with:
