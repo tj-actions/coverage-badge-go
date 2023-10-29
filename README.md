@@ -47,13 +47,6 @@ jobs:
         with:
           go-version-file: 'go.mod'
 
-      - uses: actions/cache@v3
-        with:
-          path: ~/go/pkg/mod
-          key: ${{ runner.os }}-go-${{ hashFiles('**/go.sum') }}
-          restore-keys: |
-            ${{ runner.os }}-go-
-
       - name: Run Test
         run: |
           go test -v ./... -covermode=count -coverprofile=coverage.out
