@@ -31,7 +31,7 @@ jobs:
           go_version: "1.14.4"
 
       - name: Setup go
-        uses: actions/setup-go@v4
+        uses: actions/setup-go@v5
         with:
           go-version-file: 'test/go.mod'
           cache: false
