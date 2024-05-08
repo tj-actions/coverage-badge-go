@@ -28,7 +28,7 @@ jobs:
         uses: reviewdog/action-golangci-lint@v2
         with:
           workdir: test
-          go_version: "1.14.4"
+          go_version_file: "go.mod"
 
       - name: Setup go
         uses: actions/setup-go@v5
