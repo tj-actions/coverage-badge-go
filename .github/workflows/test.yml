@@ -34,7 +34,7 @@ jobs:
         uses: reviewdog/action-golangci-lint@v2
         with:
           workdir: test
-          go_version_file: "go.mod"
+          go_version_file: "test/go.mod"
 
       - name: Run Test
         run:
