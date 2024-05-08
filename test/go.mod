@@ -1,3 +1,3 @@
 module github.com/tj-actions/coverage-badge-go/test
 
-go 1.14
+go 1.22
