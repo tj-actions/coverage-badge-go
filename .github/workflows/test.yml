@@ -24,17 +24,17 @@ jobs:
           fetch-depth: 0
           persist-credentials: false # otherwise, the token used is the GITHUB_TOKEN, instead of your personal access token.
 
-      - name: golangci-lint
-        uses: reviewdog/action-golangci-lint@v2
-        with:
-          workdir: test
-          go_version: "1.14.4"
-
       - name: Setup go
         uses: actions/setup-go@v5
         with:
           go-version-file: 'test/go.mod'
           cache: false
+
+      - name: golangci-lint
+        uses: reviewdog/action-golangci-lint@v2
+        with:
+          workdir: test
+          go_version: "1.14.4"
 
       - name: Run Test
         run:
