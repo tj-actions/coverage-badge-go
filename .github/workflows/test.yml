@@ -14,7 +14,7 @@ jobs:
     strategy:
       fail-fast: false
       matrix:
-        platform: [ubuntu-latest, windows-latest, macos-latest, macos-11, windows-2022]
+        platform: [ubuntu-latest, windows-latest, macos-latest]
 
     name: Test coverage-badge-go
     steps:
@@ -28,13 +28,12 @@ jobs:
         uses: reviewdog/action-golangci-lint@v2
         with:
           workdir: test
-          go_version: "1.14.4"
+          go_version_file: 'test/go.mod'
 
       - name: Setup go
         uses: actions/setup-go@v5
         with:
           go-version-file: 'test/go.mod'
-          cache: false
 
       - name: Run Test
         run:
