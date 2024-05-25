@@ -26,6 +26,7 @@ jobs:
 
       - name: golangci-lint
         uses: reviewdog/action-golangci-lint@v2
+        if: matrix.platform == 'ubuntu-latest'
         with:
           workdir: test
           go_version_file: 'test/go.mod'
