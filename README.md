@@ -91,7 +91,8 @@ In order to create signed commits see full guide [here](https://httgp.com/signin
 - uses: tj-actions/coverage-badge-go@v2
   id: coverage-badge-go
   with:
-    # Color of the badge - green/yellow/red
+    # Color of the badge - 
+    # green/yellow/red 
     # Type: string
     color: ''
 
@@ -100,12 +101,14 @@ In order to create signed commits see full guide [here](https://httgp.com/signin
     # Default: "coverage.out"
     filename: ''
 
-    # At what percentage does the badge become green instead 
-    # of yellow (default: 70) 
+    # At what percentage does the 
+    # badge become green instead of 
+    # yellow (default: 70) 
     # Type: string
     green: ''
 
-    # Optional URL when you click the badge
+    # Optional URL when you click 
+    # the badge 
     # Type: string
     link: ''
 
@@ -113,16 +116,19 @@ In order to create signed commits see full guide [here](https://httgp.com/signin
     # Type: string
     target: ''
 
-    # Text on the left side of the badge (default: "Coverage") 
+    # Text on the left side 
+    # of the badge (default: "Coverage") 
     # Type: string
     text: ''
 
-    # Text on the right side of the badge
+    # Text on the right side 
+    # of the badge 
     # Type: string
     value: ''
 
-    # At what percentage does the badge become yellow instead 
-    # of red (default 30) 
+    # At what percentage does the 
+    # badge become yellow instead of 
+    # red (default 30) 
     # Type: string
     yellow: ''
 
