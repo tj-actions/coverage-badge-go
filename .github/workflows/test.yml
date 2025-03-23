@@ -14,10 +14,7 @@ jobs:
     strategy:
       fail-fast: false
       matrix:
-        platform: 
-          - ubuntu-latest
-          - windows-latest
-          - macos-latest
+        platform: [ubuntu-latest, windows-latest, macos-latest]
 
     name: Test coverage-badge-go
     steps:
@@ -27,11 +24,11 @@ jobs:
           fetch-depth: 0
           persist-credentials: false # otherwise, the token used is the GITHUB_TOKEN, instead of your personal access token.
 
-      # - name: golangci-lint
-      #   uses: reviewdog/action-golangci-lint@v2
-      #   with:
-      #     workdir: test
-      #     go_version: "1.14.4"
+      - name: golangci-lint
+        uses: reviewdog/action-golangci-lint@v2
+        with:
+          workdir: test
+          go_version_file: 'test/go.mod'
 
       - name: Setup go
         uses: actions/setup-go@v5
