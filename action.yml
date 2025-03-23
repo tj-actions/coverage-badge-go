@@ -62,10 +62,9 @@ runs:
           EXTRA_ARGS="${EXTRA_ARGS} -link=${{ inputs.link }}"
         fi
         
-        TEMP_DIR=$(mktemp -d)
-        curl -sf https://gobinaries.com/github.com/AlexBeauchemin/gobadge@v0.3.0 | PREFIX=$TEMP_DIR sh
-        $TEMP_DIR/gobadge -filename=${{ inputs.filename }} $EXTRA_ARGS
-        rm -rf $TEMP_DIR
+        go install github.com/AlexBeauchemin/gobadge@v0.3.0
+        export PATH=$PATH:$(go env GOPATH)/bin
+        gobadge -filename=${{ inputs.filename }} $EXTRA_ARGS
       id: coverage-badge-go
       shell: bash
 
