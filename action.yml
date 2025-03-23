@@ -63,8 +63,7 @@ runs:
         fi
         
         GO111MODULE=on go install github.com/AlexBeauchemin/gobadge@v0.3.0
-        export PATH=$PATH:$(go env GOPATH)/bin
-        gobadge -filename=${{ inputs.filename }} $EXTRA_ARGS
+        $(go env GOPATH)/bin/gobadge -filename=${{ inputs.filename }} $EXTRA_ARGS
       id: coverage-badge-go
       shell: bash
 
