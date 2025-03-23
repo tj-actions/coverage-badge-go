@@ -88,7 +88,7 @@ In order to create signed commits see full guide [here](https://httgp.com/signin
 <!-- AUTO-DOC-INPUT:START - Do not remove or modify this section -->
 
 ```yaml
-- uses: tj-actions/coverage-badge-go@v2
+- uses: tj-actions/coverage-badge-go@v3
   id: coverage-badge-go
   with:
     # Color of the badge - 
