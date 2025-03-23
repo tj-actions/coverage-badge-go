@@ -62,8 +62,7 @@ runs:
           EXTRA_ARGS="${EXTRA_ARGS} -link=${{ inputs.link }}"
         fi
         
-        export GO111MODULE=on 
-        go install github.com/AlexBeauchemin/gobadge@v0.3.0
+        go install github.com/AlexBeauchemin/gobadge@latest
         $(go env GOPATH)/bin/gobadge -filename=${{ inputs.filename }} $EXTRA_ARGS
       id: coverage-badge-go
       shell: bash
